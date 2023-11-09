@@ -1,22 +1,18 @@
-import Component from './components/component'
-import './App.css'
 
+import './App.css'
+// import Asgnt3 from './components/typescrpit-asg';
+import { useRoutes } from 'react-router-dom'
+import Routes from './pages/Routees';
+import Header from './pages/Header';
 
 function App(){
-  const listOfUsers =[
-   {name: "person1",
-    job: "job1"} ,
-    {name: "person2",
-    job: "job2"},
-    {name: "person3",
-    job: "job3"},
-    {name: "person4",
-    job: "job4"}
+  const routing = useRoutes(Routes);
   
-  ]
+
   return (
     <>
-    <Component name={"Sanskruti"} list={listOfUsers}/>
+    <Header/>
+    {routing}
     </>
   )
 }
