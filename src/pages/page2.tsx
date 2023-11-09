@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 
 
 function Page2() {
@@ -6,6 +6,7 @@ function Page2() {
     <>
         <div>page2</div>
     <Link to={'/page2/pagechild2'}>click</Link>
+    <Outlet />
     </>
 
   )
