@@ -13,11 +13,11 @@ const Header = () => {
           </li>
           <br />
           <li>
-            <Link to="/page1/">Page 1j</Link>
+            <Link to="/page1/">Form</Link>
           </li>
           <br />
           <li>
-            <Link to="/page2/">Page 2</Link>
+            <Link to="/page2/">Table</Link>
           </li>
           <br />
           <li>

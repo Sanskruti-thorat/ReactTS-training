@@ -18,6 +18,7 @@ interface FormData {
 export default function Page1() {
   const navigate = useNavigate();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = async (values: FormData, actions: any) => {
     console.log(values);
     await new Promise((resolve) => setTimeout(resolve, 1000));
