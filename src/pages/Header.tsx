@@ -21,7 +21,7 @@ const Header = () => {
           </li>
           <br />
           <li>
-            <Link to="/page3/">Page 3</Link>
+            <Link to="/page3/">Form-bootstrap</Link>
           </li>
         </ul>
       </nav>

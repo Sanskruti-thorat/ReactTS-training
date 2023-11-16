@@ -35,15 +35,15 @@ export const basicSchemaVal = Yup.object().shape({
     .oneOf([Yup.ref("password"), ""], "Passwords must match.")
     .required("Please confirm your password."),
   dateofBirth: Yup.date()
-    .max(new Date(), "Date of birth cannot be in the future.")
-    .max(
-      Yup.ref("yesterday"),
-      "Date of birth cannot be today or in the future."
-    )
+    .max(new Date(new Date().getTime() - 24 * 60 * 60 * 1000), "Date of birth cannot be in the future.")
+    // .max(
+    //   Yup.ref("yesterday"),
+    //   "Date of birth cannot be today or in the future."
+    // )
     .required("Please enter your date of birth."),
-  yesterday: Yup.date().default(
-    () => new Date(new Date().getTime() - 24 * 60 * 60 * 1000)
-  ),
+  // yesterday: Yup.date().default(
+  //   () => new Date(new Date().getTime() - 24 * 60 * 60 * 1000)
+  // ),
 })
 
 
@@ -75,3 +75,27 @@ today: Yup.date().default(() => new Date()),
   
 });
 
+export const basicSchemaboot = Yup.object().shape({
+  name: Yup.string().required("Please enter your username."),
+  email: Yup.string()
+    .trim()
+    .required("Email address is required.")
+    .matches(
+      emailRegex,
+      "Please enter a valid email."
+    ),
+  phone: Yup.string()
+    .max(999999999, "Should be up to 9 digits")
+    .nullable(), 
+  password: Yup.string()
+    .min(5, "Password should be more than 5")
+    .matches(
+      passwordRules,
+      "Please create a stronger password."
+    )
+    .required("Please enter a password."),
+  confirmPassword: Yup.string()
+    .oneOf([Yup.ref("password"), ""], "Passwords must match.")
+    .required("Please confirm your password."),
+  gender: Yup.string().required("A radio option is required"),
+});
