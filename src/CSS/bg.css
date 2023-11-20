@@ -1,0 +1,8 @@
+.custom-background {
+    background-image: url('../assets/cloud-with-pastel-colour_66899-1161.avif'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Adjust to your needs */
+    margin: 0;
+  }
