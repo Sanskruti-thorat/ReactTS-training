@@ -3,10 +3,12 @@ import { lazy } from 'react';
 
 
 
+
 const Home = LazyLoader(lazy(async () => await import('./Home')));
 const Page1 = LazyLoader(lazy(async () => await import('./Page1')));
 const Page2 = LazyLoader(lazy(async () => await import('./page2')));
 const Page3 = LazyLoader(lazy(async () => await import('./page3')));
+const Page4 = LazyLoader(lazy(async () => await import('./page4')));
 const PageChild1 = LazyLoader(lazy(async () => await import('./children/p1')));
 const PageChild2 = LazyLoader(lazy(async () => await import('./children/p2')));
 const PageChild3 = LazyLoader(lazy(async () => await import('./children/p2')));
@@ -71,6 +73,11 @@ children:[{
     element:<PageChild33/>
  } 
 ]
+},
+{
+    
+    path:'/page4/',
+element:<Page4/>
 }
 
 ]

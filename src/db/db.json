@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "name": "Bob vance ",
+      "role": "Product Manager",
+      "salary": "90000",
+      "id": 3
+    },
+    {
+      "name": "Charlie big",
+      "role": "Marketing Specialist",
+      "salary": 95000,
+      "id": 5
+    },
+    {
+      "name": "Eva Davis",
+      "role": "Financial Analyst",
+      "id": 6,
+      "salary": 92000
+    },
+    {
+      "name": "Frank Miller",
+      "role": "HR Manager",
+      "id": 7,
+      "salary": 110000
+    },
+    {
+      "name": "Grace Wilson",
+      "role": "Sales Representative",
+      "id": 8,
+      "salary": 87000
+    },
+    {
+      "name": "David Taylor",
+      "role": "Systems Administrator",
+      "id": 9,
+      "salary": 95000
+    },
+    {
+      "name": "sonu",
+      "role": "ceo",
+      "salary": "100000",
+      "id": 10
+    }
+  ],
+  "peoples": [
+    {
+      "id": 1,
+      "name": "Alice Smith",
+      "email": "alice.smith@example.com",
+      "phone": "555123456",
+      "gender": "Female"
+    },
+    {
+      "id": 2,
+      "name": "Bob Johnson",
+      "email": "bob.johnson@example.com",
+      "phone": "555234567",
+      "gender": "Male"
+    },
+    {
+      "id": 3,
+      "name": "Catherine Davis",
+      "email": "catherine.davis@example.com",
+      "phone": "555345678",
+      "gender": "Female"
+    },
+    {
+      "id": 4,
+      "name": "David Wilson",
+      "email": "david.wilson@example.com",
+      "phone": "555456789",
+      "gender": "Male"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Brown",
+      "email": "charlie.brown@example.com",
+      "phone": "555567890",
+      "gender": "Male"
+    },
+    {
+      "id": 6,
+      "name": "Emma Miller",
+      "email": "emma.miller@example.com",
+      "phone": "555678901",
+      "gender": "Female"
+    },
+    {
+      "id": 7,
+      "name": "Frank Davis",
+      "email": "frank.davis@example.com",
+      "phone": "555789012",
+      "gender": "Male"
+    },
+    {
+      "id": 8,
+      "name": "Grace Wilson",
+      "email": "grace.wilson@example.com",
+      "phone": "555890123",
+      "gender": "Female"
+    },
+    {
+      "id": 10,
+      "name": "Isabel Smith",
+      "email": "isabel.smith@example.com",
+      "phone": "555012345",
+      "gender": "Female"
+    },
+    {
+      "id": 11,
+      "name": "Sanskruti Thorat",
+      "email": "sanskrutithorat01@gmail.com",
+      "phone": "7821031796",
+      "gender": "female"
+    }
+  ]
+}

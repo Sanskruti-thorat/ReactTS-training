@@ -43,7 +43,7 @@
     margin-bottom: 16px;
   }
   
-  .myForm button {
+  /* .myForm button {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 15px;
@@ -58,13 +58,13 @@
   }
   
   /* Optional: Style the submit button more specifically */
-  .myForm button[type="submit"] {
+  /* .myForm button[type="submit"] {
     background-color: #535353;
   }
   
   .myForm button[type="submit"]:hover {
     background-color: #747474;
-  }
+  } */ */
   .input-error {
     border-color: #f64e60 !important;
     padding-right: calc(0.75em + 0.75rem) !important;

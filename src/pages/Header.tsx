@@ -22,6 +22,9 @@ const Header = () => {
             <Nav.Link as={Link} to="/page3/">
               Form-bootstrap
             </Nav.Link>
+            <Nav.Link as={Link} to="/page4/">
+              crud
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -1,6 +1,3 @@
-
-
-
 import { Outlet, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import '../CSS/form.style.css';
@@ -120,6 +117,7 @@ export default function Page1() {
                   onBlur={handleBlur}
                   min={0}
                   className={errors.age && touched.age ? "input-error" : ""}
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   onInput={(event: any) => {
                     if (!event.target.value) {
                       event.target.value =
