@@ -46,17 +46,17 @@
   "peoples": [
     {
       "id": 1,
-      "name": "Alice Smith",
+      "name": "Alice bob",
       "email": "alice.smith@example.com",
       "phone": "555123456",
-      "gender": "Female"
+      "gender": "female"
     },
     {
       "id": 2,
-      "name": "Bob Johnson",
+      "name": "Bobbby",
       "email": "bob.johnson@example.com",
       "phone": "555234567",
-      "gender": "Male"
+      "gender": "female"
     },
     {
       "id": 3,
@@ -112,6 +112,13 @@
       "name": "Sanskruti Thorat",
       "email": "sanskrutithorat01@gmail.com",
       "phone": "7821031796",
+      "gender": "female"
+    },
+    {
+      "id": 13,
+      "name": "Sanskruti Thorat",
+      "email": "sanskrutithorat01@gmail.com",
+      "phone": "9226470492",
       "gender": "female"
     }
   ]

@@ -17,6 +17,10 @@ const UserServices =()=>{
         updateUser: async (id: number, data: object) => {
           return await axios.put(`/users/${id}`, data);
         },
+
+
+        
+        
         getPeople: async()=>{
           return await axios.get('/peoples');
         },
@@ -26,6 +30,9 @@ const UserServices =()=>{
         addPeople :async (data:object)=>{
           return await  axios.post('/peoples', data);
         },
+        updatePeople: async (id: number, data: object) => {
+          return await axios.put(`/peoples/${id}`, data);
+        }
 
     };
   };

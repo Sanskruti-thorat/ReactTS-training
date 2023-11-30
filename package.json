@@ -11,6 +11,7 @@
     "prod": "vite --prod"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.7",
     "axios": "^1.6.2",
     "bootstrap": "^4.6.2",
     "formik": "^2.4.5",

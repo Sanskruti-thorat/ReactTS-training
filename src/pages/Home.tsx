@@ -1,11 +1,32 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // import Component from '../components/component'
 // import Product from '../components/product'
 // import MapBtn from '../components/mapping-btns'
 // import States from '../components/states'
-import { store } from "../redux/reducer";
-import {useSelector} from "react-redux"
+
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchContent} from "../redux-toolkit/counter";
+import { counterActions } from "../redux-toolkit/counter";
+
+
+
+
+// import { store } from "../redux/reducer";
+// import {useSelector} from "react-redux"
+
+
+
+
+
+
+
+
+
 
 const Home = () => {
+
+
  
 //     const listOfUsers =[
 //         {name: "person1",
@@ -37,10 +58,57 @@ const Home = () => {
 {/* <Asgnt3 Items={Items}/> */}
 //        ];
 
-const count = useSelector(state=>state)
+
+
+
+
+// const count = useSelector(state=>state)
+
+
+
+
+
+
+
+
+
+
+const { value , fetchData} = useSelector((state :any) => state.counter);
+const dispatch = useDispatch();
+
+useEffect(() => {
+  dispatch(fetchContent() as any);
+}, []);
     return ( 
     
-    <>
+<>
+<p>Count: {value}</p>
+      <button onClick={() => dispatch(counterActions.incre())}>incre</button>
+      <button onClick={() => dispatch(counterActions.decre())}>decre</button>
+      <button onClick={() => dispatch(counterActions.incrementByAmount(2))}>incre by amount</button>
+
+
+
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>URL</th>
+            <th>Thumbnail URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          {fetchData.map((item:any) => (
+            <tr key={item.id}>
+              <td>{item.title}</td>
+              <td>{item.url}</td>
+              <td>{item.thumbnailUrl}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    
+{/* 
     <div>
 
 <h1>Count:{store.getState()}</h1>
@@ -48,8 +116,20 @@ const count = useSelector(state=>state)
   <button onClick={()=> store.dispatch({type:"INCRE", payload:1})}>Increment</button>
   <button onClick={()=>store.dispatch({type:"DECRE"})}>Decrement</button>
 </div>
-</div>
-    </> );
+</div> */}
+
+
+
+
+
+
+
+
+    </> 
+    
+    )
+    
+    ;
 }
  
 export default Home;

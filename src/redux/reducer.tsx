@@ -1,20 +1,20 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { createStore } from "redux";
+// import { createStore } from "redux";
 
-const count = 0 ;
+// const count = 0 ;
 
-    const reducer =(state=count,action: any )=>{
-     switch(action.type){
-    case"INCRE":
-    return state + action.payload;
+//     const reducer =(state=count,action: any )=>{
+//      switch(action.type){
+//     case"INCRE":
+//     return state + action.payload;
 
-    case"DECRE":
-    return state - 1;
+//     case"DECRE":
+//     return state - 1;
     
     
-    default:
-    return state
-  }
-    }
+//     default:
+//     return state
+//   }
+//     }
 
-    export const store = createStore(reducer)
+//     export const store = createStore(reducer)
